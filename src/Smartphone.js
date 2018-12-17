@@ -23,7 +23,10 @@ export default (props) => {
       </Card.Content>
       <Card.Content>
         <Grid>
-          <Grid.Column width={4}>
+          <Grid.Column
+            width={4}
+            textAlign='center'
+          >
             <Image
               size='small'
               src={phone.image}
@@ -62,11 +65,11 @@ export default (props) => {
               </Table.Row>
               <Table.Row>
                 <Table.Cell>Дата выпуска</Table.Cell>
-                <Table.Cell>{phone.common.year}</Table.Cell>
+                <Table.Cell>{phone.year}</Table.Cell>
               </Table.Row>
               <Table.Row>
                 <Table.Cell>Поддержка 4G</Table.Cell>
-                <Table.Cell>{phone.mobileConnection.lteSupport ? 'Да' : 'Нет'}</Table.Cell>
+                <Table.Cell>{phone.lteSupport ? 'Да' : 'Нет'}</Table.Cell>
               </Table.Row>
             </Table.Body>
           </Table>
